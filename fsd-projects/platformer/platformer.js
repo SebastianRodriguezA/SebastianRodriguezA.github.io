@@ -27,23 +27,31 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    //toggleGrid();
 
 
     // TODO 2 - Create Platforms
-
-
+    createPlatform(180,0,20,570, "black");//no cheating wall
+    createPlatform(1200,650,200,20, "blue");//first platform
+    createPlatform(200,550,770,20,"black" );//second platform
+    createPlatform(450,440,200,20, "orange");//third platform
+    createPlatform(300,320,100,20, "orange");//collectable
+    createPlatform(800,320,300,20,"orange");//path
+    createPlatform(1200,380,100,20,"red");//collectable
+    createPlatform(1200,200,200,20, "lime" );//winning platform
 
 
     // TODO 3 - Create Collectables
-
-
+    createCollectable("diamond",330,250,2,1);
+    createCollectable("max",220,450,3,1);
+    createCollectable("database",1200,130,2,1);
+    createCollectable("steve",1230,300,2,1);
 
     
     // TODO 4 - Create Cannons
-
-
-    
+    createCannon("right",550,1500);
+    createCannon("left",200,1500);
+    createCannon("top",1200,1800)
     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
