@@ -80,8 +80,6 @@
         var speed = 10;
         var positionY = 0;
         var speedY = 10;
-
-
         /**
          * This Function will be called 20 times/second.
          * Each time it is called, it should move the Box to a new location.
@@ -112,11 +110,13 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() { 
-          positionX = 0;
+          var randNumX = Math.random() * boardWidth;
+          var randNumY = Math.random() * boardHeight;
+          positionX = randNumX;
+          positionY = randNumY;
           changeBoxText(points);
           points++;
           speed = 3 * points + 10;
-          positionY = 0;
           speedY = 3 * points + 10;
         }
 
